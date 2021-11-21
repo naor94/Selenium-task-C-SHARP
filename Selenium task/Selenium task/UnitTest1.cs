@@ -10,10 +10,9 @@ namespace Selenium_task
 {
     public class Tests
     {
-        string url = "https://traderqa1.iforex.com";
+
         IWebDriver driver;
-        //string userName = "GameUserFih111";
-       // string password = "jn5t9z4cxf";
+        // Initalize vc object for getting url, user and password from excel file
         ValidCredentials vc = new ValidCredentials();
 
         public void login()
@@ -44,7 +43,6 @@ namespace Selenium_task
         {
             vc.setUserPassword();
 
-
             //open browser
             driver = new ChromeDriver();
             //Navigate to site
@@ -61,7 +59,6 @@ namespace Selenium_task
         [Test]
         public void loginTest()
         {
-          //  vc.setUserPassword();
             login();
             Assert.Pass();
         }
