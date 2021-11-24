@@ -23,7 +23,8 @@ namespace Selenium_task
             txtUserName.SendKeys(vc.getUser());
             txtPassword.SendKeys(vc.getPassword());
             clickButton.Click();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
+            Thread.Sleep(10000);
+
             try
             {
                 //element that exist only after login
