@@ -69,9 +69,9 @@ namespace Selenium_task
             login();
             var accountPart = driver.FindElement(By.Id("account"));
             accountPart.Click();
-            var logoutBtn = driver.FindElement(By.XPath("//*[@id=\"logout\"]/span[2]"));
+            var logoutBtn = driver.FindElement(By.Id("logout"));
             logoutBtn.Click();
-            var confirmLogoutBtn = driver.FindElement(By.XPath(" //*[@id=\"ExitAlertbutton0\"]"));
+            var confirmLogoutBtn = driver.FindElement(By.Id("ExitAlertbutton0"));
             confirmLogoutBtn.Click();
             var quesionMarkHover = driver.FindElement(By.XPath(" //*[@id=\"lblUname\"]/i"));
             String text = quesionMarkHover.GetAttribute("title");
