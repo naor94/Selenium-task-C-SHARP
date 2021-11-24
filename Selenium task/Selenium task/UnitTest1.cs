@@ -30,7 +30,7 @@ namespace Selenium_task
                 var accountPart = driver.FindElement(By.Id("account"));
 
             }
-            catch (Exception)
+            catch (NoSuchElementException e)
             {
                 Console.WriteLine("The page was not loaded in less than 10 ");
             }
