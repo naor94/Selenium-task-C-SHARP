@@ -1,13 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Drawing;
-using OpenQA.Selenium; // This is Selenium namespace using OpenQA.Selenium.Chrome;//Use this namespace when you are automating in google chrome using System.Threading; 
-using OpenQA.Selenium.Support.UI;
-using Excel = Microsoft.Office.Interop.Excel;
-using Microsoft.Office.Interop.Excel;
 using System.IO;
 using OfficeOpenXml;
 
