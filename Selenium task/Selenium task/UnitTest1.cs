@@ -73,7 +73,7 @@ namespace Selenium_task
             logoutBtn.Click();
             var confirmLogoutBtn = driver.FindElement(By.Id("ExitAlertbutton0"));
             confirmLogoutBtn.Click();
-            var quesionMarkHover = driver.FindElement(By.XPath(" //*[@id=\"lblUname\"]/i"));
+            var quesionMarkHover = driver.FindElement(By.CssSelector("#lblUname > i"));
             String text = quesionMarkHover.GetAttribute("title");
             writeToFile(text);
 
